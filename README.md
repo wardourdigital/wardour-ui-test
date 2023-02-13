@@ -14,9 +14,9 @@ You can see the full color palette and text styles here (Ensure fractal server i
 
 The accordion must adhere to this acceptance criteria:
 
-- Follow the visual design & layout as per the design link. Pixel perfection
+- Closely follow the visual design & layout as per the design link with the TailwindCSS design tokens.
 - The user must be able to toggle each item in the list with mouse/touch
-- The accordion must be accessible
+- The accordion must be accessible following best practice:
   - Maintain semantic ordering
   - Navigation by keyboard
 - The content provided must populate the accordion
