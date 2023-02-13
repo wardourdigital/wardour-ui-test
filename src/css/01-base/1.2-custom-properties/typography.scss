@@ -1,0 +1,105 @@
+:root,
+[data-theme="default"] {
+  // font family
+  --font-caveat: "Caveat Regualar", cursive;
+  --font-caveat-bold: "Caveat Bold", cursive;
+  --font-poppins-light: "Poppins Light", Arial,Helvetica Neue,Helvetica,sans-serif;
+  --font-poppins-light-italic: "Poppins Light Italic", Arial,Helvetica Neue,Helvetica,sans-serif;
+  --font-poppins-regular: "Poppins Regular", Arial,Helvetica Neue,Helvetica,sans-serif;
+  --font-poppins-italic: "Poppins Italic", Arial,Helvetica Neue,Helvetica,sans-serif;
+  --font-poppins-bold: "Poppins Bold", Arial,Helvetica Neue,Helvetica,sans-serif;
+  --font-poppins-bold-italic: "Poppins Bold Italic", Arial,Helvetica Neue,Helvetica,sans-serif;
+}
+
+// Type Scale
+// ---------------------------------------------
+
+:root,
+* {
+  // type scale	
+  @include defineFontProperty(--text--58px, '3.625rem');
+  @include defineFontProperty(--text--46px, '2.875rem');
+  @include defineFontProperty(--text--36px, '2.25rem');
+  @include defineFontProperty(--text--32px, '2rem');
+  @include defineFontProperty(--text--28px, '1.75rem');
+  @include defineFontProperty(--text--24px, '1.5rem');
+  @include defineFontProperty(--text--22px, '1.375rem');
+  @include defineFontProperty(--text--16px, '1rem');
+  @include defineFontProperty(--text--14px, '0.875rem');
+  @include defineFontProperty(--text--12px, '0.75rem');
+  @include defineFontProperty(--text--10px, '0.625rem');
+  
+}
+
+// Line Height Scale
+// ---------------------------------------------
+
+:root,
+* {
+  // line height
+  @include defineFontProperty(--leading--60px, '3.75rem');
+  @include defineFontProperty(--leading--52px, '3.25rem');
+  @include defineFontProperty(--leading--48px, '3rem');
+  @include defineFontProperty(--leading--36px, '2.25rem');
+  @include defineFontProperty(--leading--32px, '2rem');
+  @include defineFontProperty(--leading--28px, '1.75rem');
+  @include defineFontProperty(--leading--24px, '1.5rem');
+  @include defineFontProperty(--leading--16px, '1rem');
+  
+}
+
+@font-face {
+  font-family: "Caveat Regualar";
+  src: url('../../assets/fonts/caveat-v17-latin-regular.woff2') format('woff2'),
+  url('../../assets/fonts/caveat-v17-latin-regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Caveat Bold";
+  src: url('../../assets/fonts/caveat-v17-latin-700.woff2') format('woff2'),
+  url('../../assets/fonts/caveat-v17-latin-700.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins Light";
+  src: url('../../assets/fonts/Poppins-Light.woff2') format('woff2'),
+  url('../../assets/fonts/Poppins-Light.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins Light Italic";
+  src: url('../../assets/fonts/Poppins-LightItalic.woff2') format('woff2'),
+  url('../../assets/fonts/Poppins-LightItalic.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins Regular";
+  src: url('../../assets/fonts/Poppins-Regular.woff2') format('woff2'),
+  url('../../assets/fonts/Poppins-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins Italic";
+  src: url('../../assets/fonts/Poppins-Italic.woff2') format('woff2'),
+  url('../../assets/fonts/Poppins-Italic.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins Bold";
+  src: url('../../assets/fonts/Poppins-Bold.woff2') format('woff2'),
+  url('../../assets/fonts/Poppins-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins Bold Italic";
+  src: url('../../assets/fonts/Poppins-BoldItalic.woff2') format('woff2'),
+  url('../../assets/fonts/Poppins-BoldItalic.woff') format('woff');
+  font-display: swap;
+}

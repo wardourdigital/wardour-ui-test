@@ -1,0 +1,181 @@
+/**
+ * Button
+ */
+
+:root {
+	--btn-background: var(--color-yellow);
+	--btn-background-inverse: #fff;
+	--btn-background-hover: var(--color-blue);
+	--btn-background-focus: rgba(16, 149, 193, 0.125);
+	--btn-spacing: 1rem;
+	--btn-spacing-vertical: 0.25rem;
+	--btn-spacing-horizontal: 1rem;
+	--btn-border-radius: 5rem;
+	--border-width: 2px;
+	--transition: 0.2s ease-in-out;
+	--btn-text-color: var(--color-deep-grey);
+	--focus: 2px solid var(--color-plum);
+}
+
+// Reboot based on :
+// - normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css
+// - sanitize.css v13.0.0 | CC0 1.0 Universal | github.com/csstools/sanitize.css
+// ––––––––––––––––––––
+
+// 1. Change the font styles in all browsers
+// 2. Remove the margin on controls in Safari
+// 3. Show the overflow in Edge
+
+button {
+	margin: 0; // 2
+	overflow: visible; // 3
+	font-family: inherit; // 1
+	text-transform: none; // 1
+}
+
+// Correct the inability to style buttons in iOS and Safari
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+// Pico
+// ––––––––––––––––––––
+
+button {
+	display: block;
+	width: 100%;
+	margin-bottom: var(--btn-spacing);
+}
+
+[role="button"] {
+	display: inline-block;
+	text-decoration: none;
+}
+
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+[role="button"] {
+	--background-color: var(--btn-background);
+	--border-color: var(--btn-background);
+	--color: var(--btn-background-inverse);
+	--box-shadow: var(--button-box-shadow, 0 0 0 rgba(0, 0, 0, 0));
+
+	padding: var(--btn-spacing-vertical) var(--btn-spacing-horizontal);
+	border: var(--border-width) solid var(--border-color);
+	border-radius: var(--btn-border-radius);
+	outline: none;
+	background-color: var(--background-color);
+	box-shadow: var(--box-shadow);
+	color: var(--btn-text-color);
+	@apply text-16px font-heading;
+	line-height: var(--line-height);
+	// letter-spacing: 0.1rem;
+	text-align: center;
+	cursor: pointer;
+
+	@if $enable-transitions {
+		transition: background-color var(--transition),
+			border-color var(--transition), color var(--transition),
+			box-shadow var(--transition);
+	}
+
+	&:is([aria-current], :hover, :active) {
+		--background-color: var(--btn-background-hover);
+		--border-color: var(--btn-background-hover);
+		--box-shadow: var(--button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0));
+		--btn-text-color: var(--color-white);
+	}
+
+	&:focus {
+		--box-shadow: var(--button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0)),
+			0 0 0 var(--outline-width) var(--btn-background-focus);
+			border: var(--focus);
+	}
+}
+
+
+// .secondary, .contrast & .btn-outline
+@if $enable-classes {
+	
+	// Outline (primary)
+	:is(button, input[type="submit"], input[type="button"], [role="button"]).btn--grey,
+	input[type="reset"].btn--grey {
+		--background-color: var(--color-deep-grey);
+		--border-color: var(--color-deep-grey);
+		--btn-text-color: var(--color-white);
+	
+		&:is([aria-current], :hover, :active, :focus) {
+			--background-color: var(--color-blue);
+			--border-color: var(--color-blue);
+			--btn-text-color: white;
+			
+		}
+		&:focus {
+			border: var(--focus);
+		}
+	}
+	
+	:is(button, input[type="submit"], input[type="button"], [role="button"]).btn--outline,
+	input[type="reset"].btn--grey {
+		--background-color: var(--color-white);
+		--border-color: var(--color-deep-grey);
+		--btn-text-color: var(--color-deep-grey);
+	
+		&:is([aria-current], :hover, :active) {
+			--background-color: var(--color-blue);
+			--border-color: var(--color-blue);
+			--btn-text-color: white;
+			
+		}
+		&:focus {
+			border: var(--focus);
+		}
+	}
+}
+
+@else {
+
+	// Secondary button without .class
+	input[type="reset"] {
+		--background-color: var(--secondary);
+		--border-color: var(--secondary);
+		--color: var(--secondary-inverse);
+		cursor: pointer;
+
+		&:is([aria-current], :hover, :active) {
+			--background-color: var(--secondary-hover);
+			--border-color: var(--secondary-hover);
+		}
+
+		&:focus {
+			--box-shadow: var(--button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0)),
+				0 0 0 var(--outline-width) var(--secondary-focus);
+				border: var(--focus);
+		}
+	}
+}
+
+// Button [disabled]
+// Links without href are disabled by default
+:where(button, [type="submit"], [type="button"], [type="reset"], [role="button"])[disabled],
+:where(fieldset[disabled]) :is(button, [type="submit"], [type="button"], [type="reset"], [role="button"]),
+a[role="button"]:not([href]) {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+.btn-reset {
+	all: unset;
+	cursor: pointer;
+}
+
+.social-media{
+	&:focus-within {
+		outline: 3px solid var(--color-plum);
+	}
+}

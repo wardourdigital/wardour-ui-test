@@ -1,0 +1,63 @@
+$spacing-unit__2pt: "0.125rem";
+$spacing-unit__4pt: "0.25rem";
+$spacing-unit__8pt: "0.5rem";
+$spacing-unit__16pt: "1rem";
+$spacing-unit__24pt: "1.5rem";
+$spacing-unit__32pt: "2rem";
+$spacing-unit__40pt: "2.5rem";
+$spacing-unit__48pt: "3rem";
+$spacing-unit__64pt: "4rem";
+$spacing-unit__80pt: "5rem";
+$spacing-unit__160pt: "10rem";
+
+:root {
+    --space-unit: 1em;
+}
+
+:root,
+* {
+    @include defineCustomProperty(--space-xxxs, $spacing-unit__2pt);
+    @include defineCustomProperty(--space-xxs, $spacing-unit__4pt);
+    @include defineCustomProperty(--space-xs, $spacing-unit__8pt);
+    @include defineCustomProperty(--space-sm, $spacing-unit__16pt);
+    @include defineCustomProperty(--space-md, $spacing-unit__24pt);
+    @include defineCustomProperty(--space-lg, $spacing-unit__32pt);
+    @include defineCustomProperty(--space-xl, $spacing-unit__40pt);
+    @include defineCustomProperty(--space-xxl, $spacing-unit__48pt);
+    @include defineCustomProperty(--space-xxxl, $spacing-unit__64pt);
+    @include defineCustomProperty(--space-xxxxl, $spacing-unit__80pt);
+    @include defineCustomProperty(--space-xxxxxl, $spacing-unit__160pt);
+    --component-padding: var(--space-sm);
+    --space-unit: var(--space-sm);
+}
+
+// --- PAGE WIDTHS
+:root,
+* {
+	@include defineCustomProperty(--page-wrapper-width, "1440px");
+	@include defineCustomProperty(--page-inner-width, "1228px");
+}
+
+//--- BORDER RADIUS
+
+:root,
+* {
+    @include defineCustomProperty(--global-border-radius, $spacing-unit__32pt);
+}
+
+// --- BREAKPOINTS
+
+$breakpoint-xl: "90rem";
+$breakpoint-lg: "73.4rem";
+$breakpoint-md: "64rem";
+$breakpoint-sm: "37.5rem";
+$breakpoint-xs: "25rem";
+
+:root,
+* {
+	@include defineCustomProperty(--breakpoint-xl, $breakpoint-xl); // ~1440px
+	@include defineCustomProperty(--breakpoint-lg, $breakpoint-lg); // ~1175px
+	@include defineCustomProperty(--breakpoint-md, $breakpoint-md); // ~1024px
+	@include defineCustomProperty(--breakpoint-sm, $breakpoint-sm); // ~600px
+	@include defineCustomProperty(--breakpoint-xs, $breakpoint-xs); // ~400px
+}

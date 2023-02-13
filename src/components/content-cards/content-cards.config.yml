@@ -1,0 +1,89 @@
+prefix: "content-cards"
+label: "Content cards"
+context:
+  background_color: "bg-deep-grey"
+  cta_label: "MiM vs MBA: What’s the Difference?"
+  cta_button_link:
+    url:
+      href: "https://www.google.com"
+  items:
+    - heading: "What Are the Different Types of ?"
+      image:
+        src: https://picsum.photos/200/300
+        alt: This the alt tag
+      cta_link:
+        url:
+          href: https://www.google.com
+    - heading: "What Are the Different Types of Business Master’s Degrees?"
+      image:
+        src: https://picsum.photos/200/300
+        alt: This the alt tag
+      cta_link:
+        url:
+          href: https://www.google.com
+    - heading: "What Are the Different Types of Business Master’s Degrees?"
+      image:
+        src: https://picsum.photos/200/300
+        alt: This the alt tag
+      cta_link:
+        url:
+          href: https://www.google.com
+variants:
+  - name: Yellow
+    context:
+      background_color: "bg-yellow"
+      cta_label: "MiM vs MBA: What’s the Difference?"
+      cta_button_link:
+        url:
+          href: "https://www.google.com"
+      items:
+        - heading: "What Are the Different Types of ?"
+          image:
+            src: https://picsum.photos/200/300
+            alt: This the alt tag
+          cta_link:
+            url:
+              href: https://www.google.com
+        - heading: "What Are the Different Types of Business Master’s Degrees?"
+          image:
+            src: https://picsum.photos/200/300
+            alt: This the alt tag
+          cta_link:
+            url:
+              href: https://www.google.com
+        - heading: "What Are the Different Types of Business Master’s Degrees?"
+          image:
+            src: https://picsum.photos/200/300
+            alt: This the alt tag
+          cta_link:
+            url:
+              href: https://www.google.com
+  - name: White
+    context:
+      background_color: "bg-white"
+      cta_label: "MiM vs MBA: What’s the Difference?"
+      cta_button_link:
+        url:
+          href: "https://www.google.com"
+      items:
+        - heading: "What Are the Different Types of ?"
+          image:
+            src: /static/assets/images/thought-catalog-Nv-vx3kUR2A-unsplash.jpg
+            alt: This the alt tag
+          cta_link:
+            url:
+              href: https://www.google.com
+        - heading: "What Are the Different Types of Business Master’s Degrees?"
+          image:
+            src: /static/assets/images/thought-catalog-Nv-vx3kUR2A-unsplash.jpg
+            alt: This the alt tag
+          cta_link:
+            url:
+              href: https://www.google.com
+        - heading: "What Are the Different Types of Business Master’s Degrees?"
+          image:
+            src: /static/assets/images/thought-catalog-Nv-vx3kUR2A-unsplash.jpg
+            alt: This the alt tag
+          cta_link:
+            url:
+              href: https://www.google.com

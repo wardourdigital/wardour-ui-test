@@ -1,0 +1,4 @@
+prefix: "accordions"
+label: "Accordion"
+context:
+  placeholderText: "This is some text to ensure the data is being passed through"

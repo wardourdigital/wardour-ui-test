@@ -1,0 +1,35 @@
+{% set text_size = "text-28px md:text-36px" %}
+{% if module.items|length == 2 %}
+{% set grid_cols = "sm:grid-cols-2" %}
+{% elif module.items|length == 4 %}
+{% set grid_cols = "sm:grid-cols-2" %}
+{% else %}
+{% set grid_cols = "sm:grid-cols-2 md:grid-cols-3" %}
+{% set text_size = "text-28px" %}
+{% endif %}
+<!--<div class="bg-yellow bg-deep-grey"></div>-->
+<section class="{{ background_color }}">
+    <div class="px-16 py-32 md:py-64 mx-auto max-w-5xl space-y-16 flex flex-col items-center">
+
+        <div class="grid {{ grid_cols }} w-full gap-16 justify-center">
+            {% for item in items %}
+            <article class="col-span-1 js-load-hidden js-reveal {% if background_color == 'bg-white' %} border-[1px] rounded-lg{% endif %} flex flex-col justify-between">
+                <div class="relative overflow-hidden aspect-video rounded-tl-lg rounded-tr-lg ">
+                    <div class="inset-0 absolute">
+                        <img class="object-cover h-full w-full" src="{{ item.image.src }}" alt="{{ item.image.alt }}">
+                    </div>
+                </div>
+                <div class="{% if module.background_color == '' %}border border-deep-grey{% endif %} space-y-48 bg-white text-center p-16 border-t-0 rounded-bl-lg rounded-br-lg flex flex-col justify-between items-center grow">
+                    <h2 class="font-poppins-bold {{ text_size }} js-load-hidden js-reveal">{{ item.heading }}</h2>
+                    <a
+                            class="btn--outline w-fit"
+                            href="{{ item.url.href }}"
+                            role="button"
+                    >Read more</a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,46 @@
+:root, [data-theme="default"] {
+    @include defineColorHSL(--color-deep-grey-darker, 345,4%,2%);
+    @include defineColorHSL(--color-deep-grey-dark, 345,4%,12%);
+    @include defineColorHSL(--color-deep-grey, 345,4%,22%);
+    @include defineColorHSL(--color-deep-grey-light, 345,4%,32%);
+    @include defineColorHSL(--color-deep-grey-lighter, 345,4%,42%);
+    
+    @include defineColorHSL(--color-yellow-darker, 46,93%,42%);
+    @include defineColorHSL(--color-yellow-dark, 46,93%,52%);
+    @include defineColorHSL(--color-yellow, 46,93%,62%);
+    @include defineColorHSL(--color-yellow-light, 46,93%,72%);
+    @include defineColorHSL(--color-yellow-lighter, 46,93%,82%);
+    
+    @include defineColorHSL(--color-aqua-darker, 184,54%,41%);
+    @include defineColorHSL(--color-aqua-dark, 184,54%,51%);
+    @include defineColorHSL(--color-aqua, 184,54%,61%);
+    @include defineColorHSL(--color-aqua-light, 184,54%,71%);
+    @include defineColorHSL(--color-aqua-lighter, 184,54%,81%);
+    
+    @include defineColorHSL(--color-plum-darker, 293,36%,31%);
+    @include defineColorHSL(--color-plum-dark, 293,36%,41%);
+    @include defineColorHSL(--color-plum, 293,36%,51%);
+    @include defineColorHSL(--color-plum-light, 293,36%,61%);
+    @include defineColorHSL(--color-plum-lighter, 293,36%,71%);
+    
+    @include defineColorHSL(--color-amethyst-darker, 242,45%,47%);
+    @include defineColorHSL(--color-amethyst-dark, 242,45%,57%);
+    @include defineColorHSL(--color-amethyst, 242,45%,67%);
+    @include defineColorHSL(--color-amethyst-light, 242,45%,77%);
+    @include defineColorHSL(--color-amethyst-lighter, 242,45%,87%);
+    
+    @include defineColorHSL(--color-watermelon-darker, 351,65%,44%);
+    @include defineColorHSL(--color-watermelon-dark, 351,65%,54%);
+    @include defineColorHSL(--color-watermelon, 351,65%,64%);
+    @include defineColorHSL(--color-watermelon-light, 351,65%,74%);
+    @include defineColorHSL(--color-watermelon-lighter, 351,65%,84%);
+    
+    @include defineColorHSL(--color-blue-darker, 204,68%,37%);
+    @include defineColorHSL(--color-blue-dark, 204,68%,47%);
+    @include defineColorHSL(--color-blue, 204,68%,57%);
+    @include defineColorHSL(--color-blue-light, 204,68%,67%);
+    @include defineColorHSL(--color-blue-lighter, 204,68%,77%);
+    
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+}

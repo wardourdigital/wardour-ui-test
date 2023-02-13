@@ -1,0 +1,1809 @@
+<style>
+:root {
+--font-size-58px: 58px;
+--line-height-60px: 60px;
+
+--font-size-46px: 46px;
+--line-height-52px: 52px;
+
+--font-size-36px: 36px;
+--line-height-48px: 48px;
+
+--font-size-32px: 32px;
+--line-height-36px: 36px;
+
+--font-size-28px: 28px;
+--line-height-32px: 32px;
+
+--font-size-24px: 24px;
+--line-height-28px: 28px;
+
+--font-size-22px: 22px;
+--line-height-28px: 28px;
+
+--font-size-16px: 16px;
+--line-height-24px: 24px;
+
+--font-size-14px: 14px;
+--line-height-16px: 16px;
+
+--font-size-12px: 12px;
+--line-height-16px: 16px;
+
+--font-size-10px: 10px;
+--line-height-16px: 16px;
+
+
+
+
+--font-caveat: "Caveat Regualar", cursive;
+--font-caveat-bold: "Caveat Bold", cursive;
+
+--font-poppins-light: "Poppins Light", Arial,Helvetica Neue,Helvetica,sans-serif;
+--font-poppins-light-italic: "Poppins Light Italic", Arial,Helvetica Neue,Helvetica,sans-serif;
+--font-poppins-regular: "Poppins Regular", Arial,Helvetica Neue,Helvetica,sans-serif;
+--font-poppins-italic: "Poppins Italic", Arial,Helvetica Neue,Helvetica,sans-serif;
+--font-poppins-bold: "Poppins Bold", Arial,Helvetica Neue,Helvetica,sans-serif;
+--font-poppins-bold-italic: "Poppins Bold Italic", Arial,Helvetica Neue,Helvetica,sans-serif;
+
+}
+
+
+
+.font-caveat {
+font-family: var(--font-caveat);
+}
+.font-caveat-bold {
+font-family: var(--font-caveat-bold);
+}
+
+
+.font-poppins-light {
+font-family: var(--font-poppins-light);
+}
+.font-poppins-light-italic {
+font-family: var(--font-poppins-light-italic);
+}
+.font-poppins-regular {
+font-family: var(--font-poppins-regular);
+}
+.font-poppins-italic {
+font-family: var(--font-poppins-italic);
+}
+.font-poppins-bold {
+font-family: var(--font-poppins-bold);
+}
+.font-poppins-bold-italic {
+font-family: var(--font-poppins-bold-italic);
+}
+
+
+
+
+.text-58px {
+font-size: var(--font-size-58px);
+line-height: var(--line-height-60px);
+}
+
+.text-46px {
+font-size: var(--font-size-46px);
+line-height: var(--line-height-52px);
+}
+
+.text-36px {
+font-size: var(--font-size-36px);
+line-height: var(--line-height-48px);
+}
+
+.text-32px {
+font-size: var(--font-size-32px);
+line-height: var(--line-height-36px);
+}
+
+.text-28px {
+font-size: var(--font-size-28px);
+line-height: var(--line-height-32px);
+}
+
+.text-24px {
+font-size: var(--font-size-24px);
+line-height: var(--line-height-28px);
+}
+
+.text-22px {
+font-size: var(--font-size-22px);
+line-height: var(--line-height-28px);
+}
+
+.text-16px {
+font-size: var(--font-size-16px);
+line-height: var(--line-height-24px);
+}
+
+.text-14px {
+font-size: var(--font-size-14px);
+line-height: var(--line-height-16px);
+}
+
+.text-12px {
+font-size: var(--font-size-12px);
+line-height: var(--line-height-16px);
+}
+
+.text-10px {
+font-size: var(--font-size-10px);
+line-height: var(--line-height-16px);
+}
+
+
+:root {
+
+--color-deep-grey-darker: hsl(345,4%,2%);
+--color-deep-grey-dark: hsl(345,4%,12%);
+--color-deep-grey: hsl(345,4%,22%);
+--color-deep-grey-light: hsl(345,4%,32%);
+--color-deep-grey-lighter: hsl(345,4%,42%);
+
+
+
+--color-yellow-darker: hsl(46,93%,42%);
+--color-yellow-dark: hsl(46,93%,52%);
+--color-yellow: hsl(46,93%,62%);
+--color-yellow-light: hsl(46,93%,72%);
+--color-yellow-lighter: hsl(46,93%,82%);
+
+
+
+--color-aqua-darker: hsl(184,54%,41%);
+--color-aqua-dark: hsl(184,54%,51%);
+--color-aqua: hsl(184,54%,61%);
+--color-aqua-light: hsl(184,54%,71%);
+--color-aqua-lighter: hsl(184,54%,81%);
+
+
+
+--color-plum-darker: hsl(293,36%,31%);
+--color-plum-dark: hsl(293,36%,41%);
+--color-plum: hsl(293,36%,51%);
+--color-plum-light: hsl(293,36%,61%);
+--color-plum-lighter: hsl(293,36%,71%);
+
+
+
+--color-amethyst-darker: hsl(242,45%,47%);
+--color-amethyst-dark: hsl(242,45%,57%);
+--color-amethyst: hsl(242,45%,67%);
+--color-amethyst-light: hsl(242,45%,77%);
+--color-amethyst-lighter: hsl(242,45%,87%);
+
+
+
+--color-watermelon-darker: hsl(351,65%,44%);
+--color-watermelon-dark: hsl(351,65%,54%);
+--color-watermelon: hsl(351,65%,64%);
+--color-watermelon-light: hsl(351,65%,74%);
+--color-watermelon-lighter: hsl(351,65%,84%);
+
+
+
+--color-blue-darker: hsl(204,68%,37%);
+--color-blue-dark: hsl(204,68%,47%);
+--color-blue: hsl(204,68%,57%);
+--color-blue-light: hsl(204,68%,67%);
+--color-blue-lighter: hsl(204,68%,77%);
+
+
+}
+
+
+.color-deep-grey-darker {
+background-color: var(--color-deep-grey-darker);
+}
+.color-deep-grey-dark {
+background-color: var(--color-deep-grey-dark);
+}
+.color-deep-grey {
+background-color: var(--color-deep-grey);
+}
+.color-deep-grey-light {
+background-color: var(--color-deep-grey-light);
+}
+.color-deep-grey-lighter {
+background-color: var(--color-deep-grey-lighter);
+}
+
+.color-yellow-darker {
+background-color: var(--color-yellow-darker);
+}
+.color-yellow-dark {
+background-color: var(--color-yellow-dark);
+}
+.color-yellow {
+background-color: var(--color-yellow);
+}
+.color-yellow-light {
+background-color: var(--color-yellow-light);
+}
+.color-yellow-lighter {
+background-color: var(--color-yellow-lighter);
+}
+
+.color-aqua-darker {
+background-color: var(--color-aqua-darker);
+}
+.color-aqua-dark {
+background-color: var(--color-aqua-dark);
+}
+.color-aqua {
+background-color: var(--color-aqua);
+}
+.color-aqua-light {
+background-color: var(--color-aqua-light);
+}
+.color-aqua-lighter {
+background-color: var(--color-aqua-lighter);
+}
+
+.color-plum-darker {
+background-color: var(--color-plum-darker);
+}
+.color-plum-dark {
+background-color: var(--color-plum-dark);
+}
+.color-plum {
+background-color: var(--color-plum);
+}
+.color-plum-light {
+background-color: var(--color-plum-light);
+}
+.color-plum-lighter {
+background-color: var(--color-plum-lighter);
+}
+
+.color-amethyst-darker {
+background-color: var(--color-amethyst-darker);
+}
+.color-amethyst-dark {
+background-color: var(--color-amethyst-dark);
+}
+.color-amethyst {
+background-color: var(--color-amethyst);
+}
+.color-amethyst-light {
+background-color: var(--color-amethyst-light);
+}
+.color-amethyst-lighter {
+background-color: var(--color-amethyst-lighter);
+}
+
+.color-watermelon-darker {
+background-color: var(--color-watermelon-darker);
+}
+.color-watermelon-dark {
+background-color: var(--color-watermelon-dark);
+}
+.color-watermelon {
+background-color: var(--color-watermelon);
+}
+.color-watermelon-light {
+background-color: var(--color-watermelon-light);
+}
+.color-watermelon-lighter {
+background-color: var(--color-watermelon-lighter);
+}
+
+.color-blue-darker {
+background-color: var(--color-blue-darker);
+}
+.color-blue-dark {
+background-color: var(--color-blue-dark);
+}
+.color-blue {
+background-color: var(--color-blue);
+}
+.color-blue-light {
+background-color: var(--color-blue-light);
+}
+.color-blue-lighter {
+background-color: var(--color-blue-lighter);
+}
+
+</style>
+
+<div class="h-full">
+
+    <div class="h-24"></div>
+
+    <div class="max-w-5xl m-auto px-24">
+
+        <ul class="flex space-x-4 mb-4 px-4 py-2 bg-primary text-white rounded">
+            <li><a href="https://frontend-dev-tool.test/config-files/tailwind-config/gmat-focus">TailwindCSS Config</a></li>
+            <li><a href="https://frontend-dev-tool.test/config-files/colors/gmat-focus">Colors Custom Properties</a></li>
+            <li><a href="https://frontend-dev-tool.test/config-files/typography/gmat-focus">Typography Custom Properties</a></li>
+        </ul>
+
+        <h2 class="text-xl mb-2" id="colors">Theme colors</h2>
+        <hr class="mb-4">
+        <div class="space-y-16">
+
+            <div class="space-y-2">
+                <div>deep-grey</div>
+                <div class="grid grid-cols-5 gap-4" x-data="colorBlocks">
+                    <div @click="copyColorCss" class="aspect-square color-deep-grey-darker" data-css="bg-deep-grey-darker"></div>
+                    <div @click="copyColorCss" class="aspect-square color-deep-grey-dark" data-css="bg-deep-grey-dark"></div>
+                    <div @click="copyColorCss" class="aspect-square color-deep-grey" data-css="bg-deep-grey"></div>
+                    <div @click="copyColorCss" class="aspect-square color-deep-grey-light" data-css="bg-deep-grey-light"></div>
+                    <div @click="copyColorCss" class="aspect-square color-deep-grey-lighter" data-css="bg-deep-grey-lighter"></div>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <div>yellow</div>
+                <div class="grid grid-cols-5 gap-4" x-data="colorBlocks">
+                    <div @click="copyColorCss" class="aspect-square color-yellow-darker" data-css="bg-yellow-darker"></div>
+                    <div @click="copyColorCss" class="aspect-square color-yellow-dark" data-css="bg-yellow-dark"></div>
+                    <div @click="copyColorCss" class="aspect-square color-yellow" data-css="bg-yellow"></div>
+                    <div @click="copyColorCss" class="aspect-square color-yellow-light" data-css="bg-yellow-light"></div>
+                    <div @click="copyColorCss" class="aspect-square color-yellow-lighter" data-css="bg-yellow-lighter"></div>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <div>aqua</div>
+                <div class="grid grid-cols-5 gap-4" x-data="colorBlocks">
+                    <div @click="copyColorCss" class="aspect-square color-aqua-darker" data-css="bg-aqua-darker"></div>
+                    <div @click="copyColorCss" class="aspect-square color-aqua-dark" data-css="bg-aqua-dark"></div>
+                    <div @click="copyColorCss" class="aspect-square color-aqua" data-css="bg-aqua"></div>
+                    <div @click="copyColorCss" class="aspect-square color-aqua-light" data-css="bg-aqua-light"></div>
+                    <div @click="copyColorCss" class="aspect-square color-aqua-lighter" data-css="bg-aqua-lighter"></div>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <div>plum</div>
+                <div class="grid grid-cols-5 gap-4" x-data="colorBlocks">
+                    <div @click="copyColorCss" class="aspect-square color-plum-darker" data-css="bg-plum-darker"></div>
+                    <div @click="copyColorCss" class="aspect-square color-plum-dark" data-css="bg-plum-dark"></div>
+                    <div @click="copyColorCss" class="aspect-square color-plum" data-css="bg-plum"></div>
+                    <div @click="copyColorCss" class="aspect-square color-plum-light" data-css="bg-plum-light"></div>
+                    <div @click="copyColorCss" class="aspect-square color-plum-lighter" data-css="bg-plum-lighter"></div>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <div>amethyst</div>
+                <div class="grid grid-cols-5 gap-4" x-data="colorBlocks">
+                    <div @click="copyColorCss" class="aspect-square color-amethyst-darker" data-css="bg-amethyst-darker"></div>
+                    <div @click="copyColorCss" class="aspect-square color-amethyst-dark" data-css="bg-amethyst-dark"></div>
+                    <div @click="copyColorCss" class="aspect-square color-amethyst" data-css="bg-amethyst"></div>
+                    <div @click="copyColorCss" class="aspect-square color-amethyst-light" data-css="bg-amethyst-light"></div>
+                    <div @click="copyColorCss" class="aspect-square color-amethyst-lighter" data-css="bg-amethyst-lighter"></div>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <div>watermelon</div>
+                <div class="grid grid-cols-5 gap-4" x-data="colorBlocks">
+                    <div @click="copyColorCss" class="aspect-square color-watermelon-darker" data-css="bg-watermelon-darker"></div>
+                    <div @click="copyColorCss" class="aspect-square color-watermelon-dark" data-css="bg-watermelon-dark"></div>
+                    <div @click="copyColorCss" class="aspect-square color-watermelon" data-css="bg-watermelon"></div>
+                    <div @click="copyColorCss" class="aspect-square color-watermelon-light" data-css="bg-watermelon-light"></div>
+                    <div @click="copyColorCss" class="aspect-square color-watermelon-lighter" data-css="bg-watermelon-lighter"></div>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <div>blue</div>
+                <div class="grid grid-cols-5 gap-4" x-data="colorBlocks">
+                    <div @click="copyColorCss" class="aspect-square color-blue-darker" data-css="bg-blue-darker"></div>
+                    <div @click="copyColorCss" class="aspect-square color-blue-dark" data-css="bg-blue-dark"></div>
+                    <div @click="copyColorCss" class="aspect-square color-blue" data-css="bg-blue"></div>
+                    <div @click="copyColorCss" class="aspect-square color-blue-light" data-css="bg-blue-light"></div>
+                    <div @click="copyColorCss" class="aspect-square color-blue-lighter" data-css="bg-blue-lighter"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="h-64"></div>
+        <h2 class="text-xl" id="fonts">Theme font families</h2>
+
+        <div class="space-y-16" x-data="colorBlocks">
+
+
+            <div class="space-y-8">
+                <hr>
+                <p class="font-nuntino-bold uppercase">Caveat Regualar</p>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-58px font-caveat">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Caveat Regualar 58px"
+                            data-css="text-58px font-caveat"
+                    >
+                        <div class="text-sm text-primary-light">58/60</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-46px font-caveat">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Caveat Regualar 46px"
+                            data-css="text-46px font-caveat"
+                    >
+                        <div class="text-sm text-primary-light">46/52</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-36px font-caveat">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Caveat Regualar 36px"
+                            data-css="text-36px font-caveat"
+                    >
+                        <div class="text-sm text-primary-light">36/48</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-32px font-caveat">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Caveat Regualar 32px"
+                            data-css="text-32px font-caveat"
+                    >
+                        <div class="text-sm text-primary-light">32/36</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-28px font-caveat">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Caveat Regualar 28px"
+                            data-css="text-28px font-caveat"
+                    >
+                        <div class="text-sm text-primary-light">28/32</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-24px font-caveat">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Caveat Regualar 24px"
+                            data-css="text-24px font-caveat"
+                    >
+                        <div class="text-sm text-primary-light">24/28</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-22px font-caveat">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Caveat Regualar 22px"
+                            data-css="text-22px font-caveat"
+                    >
+                        <div class="text-sm text-primary-light">22/28</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-16px font-caveat">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Caveat Regualar 16px"
+                            data-css="text-16px font-caveat"
+                    >
+                        <div class="text-sm text-primary-light">16/24</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-14px font-caveat">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Caveat Regualar 14px"
+                            data-css="text-14px font-caveat"
+                    >
+                        <div class="text-sm text-primary-light">14/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-12px font-caveat">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Caveat Regualar 12px"
+                            data-css="text-12px font-caveat"
+                    >
+                        <div class="text-sm text-primary-light">12/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-10px font-caveat">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Caveat Regualar 10px"
+                            data-css="text-10px font-caveat"
+                    >
+                        <div class="text-sm text-primary-light">10/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="space-y-8">
+                <hr>
+                <p class="font-nuntino-bold uppercase">Caveat Bold</p>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-58px font-caveat-bold">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Caveat Bold 58px"
+                            data-css="text-58px font-caveat-bold"
+                    >
+                        <div class="text-sm text-primary-light">58/60</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-46px font-caveat-bold">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Caveat Bold 46px"
+                            data-css="text-46px font-caveat-bold"
+                    >
+                        <div class="text-sm text-primary-light">46/52</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-36px font-caveat-bold">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Caveat Bold 36px"
+                            data-css="text-36px font-caveat-bold"
+                    >
+                        <div class="text-sm text-primary-light">36/48</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-32px font-caveat-bold">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Caveat Bold 32px"
+                            data-css="text-32px font-caveat-bold"
+                    >
+                        <div class="text-sm text-primary-light">32/36</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-28px font-caveat-bold">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Caveat Bold 28px"
+                            data-css="text-28px font-caveat-bold"
+                    >
+                        <div class="text-sm text-primary-light">28/32</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-24px font-caveat-bold">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Caveat Bold 24px"
+                            data-css="text-24px font-caveat-bold"
+                    >
+                        <div class="text-sm text-primary-light">24/28</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-22px font-caveat-bold">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Caveat Bold 22px"
+                            data-css="text-22px font-caveat-bold"
+                    >
+                        <div class="text-sm text-primary-light">22/28</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-16px font-caveat-bold">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Caveat Bold 16px"
+                            data-css="text-16px font-caveat-bold"
+                    >
+                        <div class="text-sm text-primary-light">16/24</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-14px font-caveat-bold">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Caveat Bold 14px"
+                            data-css="text-14px font-caveat-bold"
+                    >
+                        <div class="text-sm text-primary-light">14/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-12px font-caveat-bold">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Caveat Bold 12px"
+                            data-css="text-12px font-caveat-bold"
+                    >
+                        <div class="text-sm text-primary-light">12/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-10px font-caveat-bold">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Caveat Bold 10px"
+                            data-css="text-10px font-caveat-bold"
+                    >
+                        <div class="text-sm text-primary-light">10/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+
+
+            <div class="space-y-8">
+                <hr>
+                <p class="font-nuntino-bold uppercase">Poppins Light</p>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-58px font-poppins-light">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Light 58px"
+                            data-css="text-58px font-poppins-light"
+                    >
+                        <div class="text-sm text-primary-light">58/60</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-46px font-poppins-light">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Light 46px"
+                            data-css="text-46px font-poppins-light"
+                    >
+                        <div class="text-sm text-primary-light">46/52</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-36px font-poppins-light">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Light 36px"
+                            data-css="text-36px font-poppins-light"
+                    >
+                        <div class="text-sm text-primary-light">36/48</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-32px font-poppins-light">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Light 32px"
+                            data-css="text-32px font-poppins-light"
+                    >
+                        <div class="text-sm text-primary-light">32/36</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-28px font-poppins-light">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Light 28px"
+                            data-css="text-28px font-poppins-light"
+                    >
+                        <div class="text-sm text-primary-light">28/32</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-24px font-poppins-light">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Light 24px"
+                            data-css="text-24px font-poppins-light"
+                    >
+                        <div class="text-sm text-primary-light">24/28</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-22px font-poppins-light">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Light 22px"
+                            data-css="text-22px font-poppins-light"
+                    >
+                        <div class="text-sm text-primary-light">22/28</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-16px font-poppins-light">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Light 16px"
+                            data-css="text-16px font-poppins-light"
+                    >
+                        <div class="text-sm text-primary-light">16/24</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-14px font-poppins-light">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Light 14px"
+                            data-css="text-14px font-poppins-light"
+                    >
+                        <div class="text-sm text-primary-light">14/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-12px font-poppins-light">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Light 12px"
+                            data-css="text-12px font-poppins-light"
+                    >
+                        <div class="text-sm text-primary-light">12/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-10px font-poppins-light">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Light 10px"
+                            data-css="text-10px font-poppins-light"
+                    >
+                        <div class="text-sm text-primary-light">10/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="space-y-8">
+                <hr>
+                <p class="font-nuntino-bold uppercase">Poppins Light Italic</p>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-58px font-poppins-light-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Light Italic 58px"
+                            data-css="text-58px font-poppins-light-italic"
+                    >
+                        <div class="text-sm text-primary-light">58/60</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-46px font-poppins-light-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Light Italic 46px"
+                            data-css="text-46px font-poppins-light-italic"
+                    >
+                        <div class="text-sm text-primary-light">46/52</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-36px font-poppins-light-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Light Italic 36px"
+                            data-css="text-36px font-poppins-light-italic"
+                    >
+                        <div class="text-sm text-primary-light">36/48</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-32px font-poppins-light-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Light Italic 32px"
+                            data-css="text-32px font-poppins-light-italic"
+                    >
+                        <div class="text-sm text-primary-light">32/36</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-28px font-poppins-light-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Light Italic 28px"
+                            data-css="text-28px font-poppins-light-italic"
+                    >
+                        <div class="text-sm text-primary-light">28/32</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-24px font-poppins-light-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Light Italic 24px"
+                            data-css="text-24px font-poppins-light-italic"
+                    >
+                        <div class="text-sm text-primary-light">24/28</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-22px font-poppins-light-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Light Italic 22px"
+                            data-css="text-22px font-poppins-light-italic"
+                    >
+                        <div class="text-sm text-primary-light">22/28</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-16px font-poppins-light-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Light Italic 16px"
+                            data-css="text-16px font-poppins-light-italic"
+                    >
+                        <div class="text-sm text-primary-light">16/24</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-14px font-poppins-light-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Light Italic 14px"
+                            data-css="text-14px font-poppins-light-italic"
+                    >
+                        <div class="text-sm text-primary-light">14/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-12px font-poppins-light-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Light Italic 12px"
+                            data-css="text-12px font-poppins-light-italic"
+                    >
+                        <div class="text-sm text-primary-light">12/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-10px font-poppins-light-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Light Italic 10px"
+                            data-css="text-10px font-poppins-light-italic"
+                    >
+                        <div class="text-sm text-primary-light">10/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="space-y-8">
+                <hr>
+                <p class="font-nuntino-bold uppercase">Poppins Regular</p>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-58px font-poppins-regular">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Regular 58px"
+                            data-css="text-58px font-poppins-regular"
+                    >
+                        <div class="text-sm text-primary-light">58/60</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-46px font-poppins-regular">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Regular 46px"
+                            data-css="text-46px font-poppins-regular"
+                    >
+                        <div class="text-sm text-primary-light">46/52</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-36px font-poppins-regular">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Regular 36px"
+                            data-css="text-36px font-poppins-regular"
+                    >
+                        <div class="text-sm text-primary-light">36/48</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-32px font-poppins-regular">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Regular 32px"
+                            data-css="text-32px font-poppins-regular"
+                    >
+                        <div class="text-sm text-primary-light">32/36</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-28px font-poppins-regular">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Regular 28px"
+                            data-css="text-28px font-poppins-regular"
+                    >
+                        <div class="text-sm text-primary-light">28/32</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-24px font-poppins-regular">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Regular 24px"
+                            data-css="text-24px font-poppins-regular"
+                    >
+                        <div class="text-sm text-primary-light">24/28</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-22px font-poppins-regular">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Regular 22px"
+                            data-css="text-22px font-poppins-regular"
+                    >
+                        <div class="text-sm text-primary-light">22/28</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-16px font-poppins-regular">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Regular 16px"
+                            data-css="text-16px font-poppins-regular"
+                    >
+                        <div class="text-sm text-primary-light">16/24</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-14px font-poppins-regular">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Regular 14px"
+                            data-css="text-14px font-poppins-regular"
+                    >
+                        <div class="text-sm text-primary-light">14/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-12px font-poppins-regular">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Regular 12px"
+                            data-css="text-12px font-poppins-regular"
+                    >
+                        <div class="text-sm text-primary-light">12/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-10px font-poppins-regular">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Regular 10px"
+                            data-css="text-10px font-poppins-regular"
+                    >
+                        <div class="text-sm text-primary-light">10/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="space-y-8">
+                <hr>
+                <p class="font-nuntino-bold uppercase">Poppins Italic</p>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-58px font-poppins-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Italic 58px"
+                            data-css="text-58px font-poppins-italic"
+                    >
+                        <div class="text-sm text-primary-light">58/60</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-46px font-poppins-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Italic 46px"
+                            data-css="text-46px font-poppins-italic"
+                    >
+                        <div class="text-sm text-primary-light">46/52</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-36px font-poppins-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Italic 36px"
+                            data-css="text-36px font-poppins-italic"
+                    >
+                        <div class="text-sm text-primary-light">36/48</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-32px font-poppins-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Italic 32px"
+                            data-css="text-32px font-poppins-italic"
+                    >
+                        <div class="text-sm text-primary-light">32/36</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-28px font-poppins-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Italic 28px"
+                            data-css="text-28px font-poppins-italic"
+                    >
+                        <div class="text-sm text-primary-light">28/32</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-24px font-poppins-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Italic 24px"
+                            data-css="text-24px font-poppins-italic"
+                    >
+                        <div class="text-sm text-primary-light">24/28</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-22px font-poppins-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Italic 22px"
+                            data-css="text-22px font-poppins-italic"
+                    >
+                        <div class="text-sm text-primary-light">22/28</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-16px font-poppins-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Italic 16px"
+                            data-css="text-16px font-poppins-italic"
+                    >
+                        <div class="text-sm text-primary-light">16/24</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-14px font-poppins-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Italic 14px"
+                            data-css="text-14px font-poppins-italic"
+                    >
+                        <div class="text-sm text-primary-light">14/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-12px font-poppins-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Italic 12px"
+                            data-css="text-12px font-poppins-italic"
+                    >
+                        <div class="text-sm text-primary-light">12/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-10px font-poppins-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Italic 10px"
+                            data-css="text-10px font-poppins-italic"
+                    >
+                        <div class="text-sm text-primary-light">10/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="space-y-8">
+                <hr>
+                <p class="font-nuntino-bold uppercase">Poppins Bold</p>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-58px font-poppins-bold">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Bold 58px"
+                            data-css="text-58px font-poppins-bold"
+                    >
+                        <div class="text-sm text-primary-light">58/60</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-46px font-poppins-bold">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Bold 46px"
+                            data-css="text-46px font-poppins-bold"
+                    >
+                        <div class="text-sm text-primary-light">46/52</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-36px font-poppins-bold">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Bold 36px"
+                            data-css="text-36px font-poppins-bold"
+                    >
+                        <div class="text-sm text-primary-light">36/48</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-32px font-poppins-bold">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Bold 32px"
+                            data-css="text-32px font-poppins-bold"
+                    >
+                        <div class="text-sm text-primary-light">32/36</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-28px font-poppins-bold">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Bold 28px"
+                            data-css="text-28px font-poppins-bold"
+                    >
+                        <div class="text-sm text-primary-light">28/32</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-24px font-poppins-bold">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Bold 24px"
+                            data-css="text-24px font-poppins-bold"
+                    >
+                        <div class="text-sm text-primary-light">24/28</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-22px font-poppins-bold">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Bold 22px"
+                            data-css="text-22px font-poppins-bold"
+                    >
+                        <div class="text-sm text-primary-light">22/28</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-16px font-poppins-bold">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Bold 16px"
+                            data-css="text-16px font-poppins-bold"
+                    >
+                        <div class="text-sm text-primary-light">16/24</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-14px font-poppins-bold">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Bold 14px"
+                            data-css="text-14px font-poppins-bold"
+                    >
+                        <div class="text-sm text-primary-light">14/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-12px font-poppins-bold">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Bold 12px"
+                            data-css="text-12px font-poppins-bold"
+                    >
+                        <div class="text-sm text-primary-light">12/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-10px font-poppins-bold">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Bold 10px"
+                            data-css="text-10px font-poppins-bold"
+                    >
+                        <div class="text-sm text-primary-light">10/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="space-y-8">
+                <hr>
+                <p class="font-nuntino-bold uppercase">Poppins Bold Italic</p>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-58px font-poppins-bold-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Bold Italic 58px"
+                            data-css="text-58px font-poppins-bold-italic"
+                    >
+                        <div class="text-sm text-primary-light">58/60</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-46px font-poppins-bold-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Bold Italic 46px"
+                            data-css="text-46px font-poppins-bold-italic"
+                    >
+                        <div class="text-sm text-primary-light">46/52</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-36px font-poppins-bold-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Bold Italic 36px"
+                            data-css="text-36px font-poppins-bold-italic"
+                    >
+                        <div class="text-sm text-primary-light">36/48</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-32px font-poppins-bold-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Bold Italic 32px"
+                            data-css="text-32px font-poppins-bold-italic"
+                    >
+                        <div class="text-sm text-primary-light">32/36</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-28px font-poppins-bold-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Bold Italic 28px"
+                            data-css="text-28px font-poppins-bold-italic"
+                    >
+                        <div class="text-sm text-primary-light">28/32</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-24px font-poppins-bold-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Bold Italic 24px"
+                            data-css="text-24px font-poppins-bold-italic"
+                    >
+                        <div class="text-sm text-primary-light">24/28</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-22px font-poppins-bold-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Bold Italic 22px"
+                            data-css="text-22px font-poppins-bold-italic"
+                    >
+                        <div class="text-sm text-primary-light">22/28</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-16px font-poppins-bold-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Bold Italic 16px"
+                            data-css="text-16px font-poppins-bold-italic"
+                    >
+                        <div class="text-sm text-primary-light">16/24</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-14px font-poppins-bold-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Bold Italic 14px"
+                            data-css="text-14px font-poppins-bold-italic"
+                    >
+                        <div class="text-sm text-primary-light">14/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-12px font-poppins-bold-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Bold Italic 12px"
+                            data-css="text-12px font-poppins-bold-italic"
+                    >
+                        <div class="text-sm text-primary-light">12/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex gap-4 justify-between">
+                    <div class="heading my-4 text-10px font-poppins-bold-italic">Woven silk pyjamas exchanged for blue quartz.</div>
+                    <button
+                            @click="copyColorCss"
+                            class="text-primary-light hover:text-primary-darker flex gap-4 justify-between items-center btn-reset"
+                            title="Copy Poppins Bold Italic 10px"
+                            data-css="text-10px font-poppins-bold-italic"
+                    >
+                        <div class="text-sm text-primary-light">10/16</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="h-64"></div>
+
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('colorBlocks', () => ({
+                open: false,
+                copyColorCss(e) {
+
+                    let targetEl = e.target
+                    let dataCss = targetEl.dataset.css
+
+                    if(dataCss === undefined) {
+                        // get the parent element
+                        dataCss = targetEl.parentElement.dataset.css
+                    }
+
+                    navigator.clipboard.writeText(dataCss);
+                }
+            }))
+        })
+    </script>
+
+</div>
