@@ -10,16 +10,19 @@ The project includes a custom [TailwindCSS config file](https://tailwindcss.com/
 
 You can see the full color palette and text styles here (Ensure fractal server is running first): http://localhost:3000/components/detail/design-tokens
 
+The project also supports SASS syntax to keep component classes in separate files.
+
 ## Acceptance Criteria
 
 The accordion must adhere to this acceptance criteria:
 
-- Closely follow the visual design & layout as per the design link with the TailwindCSS design tokens.
+- Closely follow the visual design & layout as per the design link with the TailwindCSS design tokens or CSS Class.
 - The user must be able to toggle each item in the list with mouse/touch
 - The accordion must be accessible following best practice:
   - Maintain semantic ordering
   - Navigation by keyboard
-- The content provided must populate the accordion
+- The content dropdown should accept formatted text.
+- Vanilla JS for any functionality added
 
 ## Nice to see
 
@@ -32,6 +35,7 @@ The accordion must adhere to this acceptance criteria:
 - Nunjucks
 - TailwindCSS
 - PostCSS
+- SCSS
 - NodeJS v16.19.0
 
 ## Running the project
